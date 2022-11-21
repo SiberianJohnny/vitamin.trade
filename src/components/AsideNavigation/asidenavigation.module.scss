@@ -1,0 +1,61 @@
+.navHeader {
+  padding-left: 40px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & button {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.87);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+  }
+}
+
+.link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #2c59a5;
+  padding: 12px 0 12px 40px;
+  transition: 0.2s;
+  &Item {
+    :hover {
+      background: #2c59a5;
+      color: #ffffff;
+      transition: 0.1s;
+    }
+  }
+}
+
+.sublink {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 12px 0 12px 60px;
+  &Item {
+    :hover {
+      background: #2c59a5;
+      color: #ffffff;
+      transition: 0.1s;
+    }
+  }
+}
+
+.authBtn {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 18px 0 18px 80px;
+  background: rgba(0, 0, 0, 0.04);
+}

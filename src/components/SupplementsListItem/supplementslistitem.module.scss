@@ -1,0 +1,58 @@
+.listItem {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr auto;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 8px 0;
+  transition: 0.3s;
+  &:hover {
+    background-color: #ebebeb;
+    transition: 0.3s;
+  }
+}
+
+.image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.button {
+  max-width: fit-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2662c9;
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 2px solid #2662c9;
+  border-radius: 40px;
+  transition: 0.2s;
+  &:hover {
+    cursor: pointer;
+    background-color: #2662c9;
+    color: #ffffff;
+    transition: 0.1s;
+  }
+}
