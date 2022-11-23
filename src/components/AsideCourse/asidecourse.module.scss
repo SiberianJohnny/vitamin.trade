@@ -1,14 +1,71 @@
-.asideCourse {
-  & h1 {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    color: rgba(0, 0, 0, 0.87);
+.aside {
+  &_course {
+    max-height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 24px;
+    & h1 {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    & p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.72);
+    }
+    &__btn {
+      cursor: pointer;
+      padding: 0;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: #f9f9f9;
+      border: none;
+      outline: none;
+      margin-bottom: 32px;
+    }
   }
-  & p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.72);
+  &_open {
+    flex-grow: 1;
+  }
+}
+
+.course_item {
+  margin-bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  padding: 16px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    margin-bottom: 16px;
+    &_text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+  &__remove_btn {
+    cursor: pointer;
+    color: #fff;
+    background: indianred;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+  }
+  &__main {
+    display: flex;
   }
 }

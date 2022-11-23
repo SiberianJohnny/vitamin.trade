@@ -67,16 +67,19 @@ const navLinks = [
   {
     link: "#",
     name: "Документы",
-    submenu: ["item1", "item2"],
+    submenu: [],
   },
 ];
 
 const AsideNavigation = () => {
   return (
-    <aside className={styles.asideNavigation}>
-      <div className={styles.navHeader}>
+    <aside className={styles.aside}>
+      <div className={styles.nav__header}>
         <img src={logo} alt="Supplement Group" />
-        <button></button>
+        <input className={styles.nav__hamb} type="checkbox" id="side-menu" />
+        <label className={styles.nav__hamb_label} htmlFor="side-menu">
+          <span className={styles.nav__hamb_line}></span>
+        </label>
       </div>
       <nav>
         <ul>
@@ -99,7 +102,7 @@ const AsideNavigation = () => {
           ))}
         </ul>
       </nav>
-      <a href="#" className={styles.authBtn}>
+      <a href="#" className={styles.auth_btn}>
         Войти
       </a>
     </aside>

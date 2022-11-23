@@ -1,17 +1,77 @@
-.navHeader {
-  padding-left: 40px;
-  padding-bottom: 32px;
+.aside {
+  max-height: 100vh;
+  padding-top: 40px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  & button {
-    position: relative;
-    width: 18px;
-    height: 18px;
-    border: none;
-    background: none;
-    border-top: 2px solid rgba(0, 0, 0, 0.87);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  &__header {
+    padding-left: 40px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & button {
+      cursor: pointer;
+      position: relative;
+      width: 18px;
+      height: 18px;
+      border: none;
+      background: none;
+      border-top: 2px solid rgba(0, 0, 0, 0.87);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+    }
+  }
+  &__hamb {
+    display: none;
+    &_label {
+      display: inline-block;
+      padding: 14px 9px;
+      margin: 0 -35px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.87);
+      font-weight: 400;
+      font-size: 24px;
+      margin-right: 32px;
+    }
+    &_line {
+      background: rgba(0, 0, 0, 0.87);
+      display: block;
+      height: 2px;
+      position: relative;
+      width: 18px;
+      border-radius: 10px;
+
+      &::before {
+        background: rgba(0, 0, 0, 0.87);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        top: 6px;
+        border-radius: 10px;
+      }
+
+      &::after {
+        background: rgba(0, 0, 0, 0.87);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        top: -6px;
+        border-radius: 10px;
+      }
+    }
   }
 }
 
@@ -49,7 +109,7 @@
   }
 }
 
-.authBtn {
+.auth_btn {
   display: inline-block;
   width: 100%;
   font-weight: 400;
@@ -58,4 +118,5 @@
   color: rgba(0, 0, 0, 0.87);
   padding: 18px 0 18px 80px;
   background: rgba(0, 0, 0, 0.04);
+  margin-top: auto;
 }

@@ -1,0 +1,19 @@
+.list {
+  &_item {
+    display: flex;
+    align-items: center;
+    &__image {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      border-radius: 50px;
+      margin-right: 16px;
+    }
+    &__description {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

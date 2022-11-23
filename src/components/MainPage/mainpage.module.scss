@@ -1,5 +1,4 @@
 main {
   display: grid;
-  grid-template-columns: 280px auto 280px;
-  padding-top: 40px;
+  grid-template-columns: 280px auto minmax(280px, max-content);
 }
