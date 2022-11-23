@@ -49,7 +49,7 @@ const AsideCourse = () => {
       }`}
     >
       <button className={styles.aside_course__btn} onClick={openCourseHandler}>
-        Мой курс приёма
+        {`< Мой курс приёма`}
       </button>
       {!myCourseItems.length > 0 ? (
         <p>Выберите биодобавку, чтобы собрать свой персональный курс</p>
